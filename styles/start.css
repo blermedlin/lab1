@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Kosmos';
+    src: url('../font/Kosmos.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #12041F;
+    font-family: 'Kosmos', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1300px;
+    aspect-ratio: 16 / 9;
+    background-color: #1A0B2E;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8), inset 0 0 60px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    font-size: 130px;
+    text-decoration: none;
+    text-align: center;
+    color: #FF00FF;
+    text-shadow: 0 0 15px #FF00FF;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 15px #FF00FF, 0 0 20px #FF00FF;
+    animation: wobble 1.5s infinite ease-in-out;
+}
+
+@keyframes wobble {
+    0%, 100% {
+        transform: scale(1.05) rotate(3deg);
+    }
+    50% {
+        transform: scale(1.05) rotate(-3deg);
+    }
+}
+

@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Kosmos';
+    src: url('../font/Kosmos.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #12041F;
+    font-family: 'Kosmos';
+}
+
+.map-container {
+    position: relative;
+    width: 90%;
+    max-width: 1300px;
+    aspect-ratio: 16 / 9;
+    background-color: #1A0B2E;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8), inset 0 0 60px rgba(0, 0, 0, 0.5);
+}
+
+/* уровни*/
+.level {
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 4px;
+    box-shadow: 0 0 15px aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: transparent; /* Изначально цифра СОВЕРШЕННО невидима */
+    text-decoration: none;
+}
+.level-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 80px;
+}
+
+.text {
+    color: #FF00FF;
+    text-shadow: 0 0 15px #FF00FF;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-size: 85px;
+    top: 5%;
+    width: 100%;
+}
+
+.cursor-style {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 25px aliceblue;
+    border-radius: 50%;
+    pointer-events: none;
+    display: none;
+    transform: translate(-50%, -50%);
+}
