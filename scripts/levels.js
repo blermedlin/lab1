@@ -17,7 +17,7 @@ levels.forEach(level => {//для каждого квадратика задае
         }
 
         if (target.textContent === "1") {//если это первый уровень
-            target.dataset.href = "./gamelevel1.html"; // кладем в данные а именно в ссылку значение - ссылка на уровень
+            target.dataset.href = "./gameLevel1.html"; // кладем в данные а именно в ссылку значение - ссылка на уровень
             target.style.backgroundColor = 'yellow'; // квадратик теперь желтый
             target.style.boxShadow = '0 0 15px yellow'; //светится
             target.style.color = 'black'; // цвет текста черный
